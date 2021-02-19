@@ -8,8 +8,8 @@ html5、css、ajax、jQuery
 1、安装node服务  
 2、安装mysql数据库，并导入创建mall数据库  
 3、修改config中的index.js文件中的数据库配置user和password  
-4、配置完成后进入根目录，在根目录下打开命令窗口，输入node index.js,启动node服务器
-5、打开浏览器(建议使用谷歌浏览器)，在地址栏中输入localhost:3000/index/index.html
+4、配置完成后进入根目录，在根目录下打开命令窗口，输入node index.js,启动node服务器  
+5、打开浏览器(建议使用谷歌浏览器)，在地址栏中输入localhost:3000/index/index.html  
 6、按f12进入手机预览模式浏览
 ### 测试账号 
 用户名：zhangsan；密码：123
