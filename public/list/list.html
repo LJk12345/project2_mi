@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/layer.css">
+    <link rel="stylesheet" href="/public/fonts/iconfont.css">
+    <link rel="stylesheet" href="list.css">
+</head>
+
+<body class="iconfont">
+    <div class="page-container">
+        <div class="page-header">
+            <div class="page-header_search">
+                <i class="icon-back"></i>
+                <div>
+                    <i class="icon-search"></i>
+                    <input type="text" />
+                </div>
+                <i class="icon-category" ></i>
+            </div>
+            <ul>
+                <li class="select" data-sortClass="sale">销量</li>
+                <li data-sortClass="price"><span>价格</span></li>
+                <li data-sortClass="rate">热度</li>
+                <li ><i class="select" data-sort="asc"  style="font-size: 20px;">&#xe615;</i></li>
+            </ul>
+        </div>
+        <div class="page-content hide-scroll" >
+            <ul class="ul_height"></ul>
+        </div>
+    </div>
+    <script src="/public/js/jquery-3.4.1.min.js"></script>
+    <script src="/public/js/ajax-extend.js"></script>
+    <script src="/public/js/layer.js"></script>
+    <script src="list.js"></script>
+</body>
+
+</html>

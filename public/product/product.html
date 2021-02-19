@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- 手机端适口指定 -->
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<!-- 以斜杠开头的是绝对路径 -->
+	<link rel="stylesheet" href="/public/css/reset.css">
+	<!-- <link rel="stylesheet" href="/public/css/swiper-bundle.min.css"> -->
+	<link rel="stylesheet" href="/public/css/layer.css">
+	<link rel="stylesheet" href="/public/fonts/iconfont.css">
+	<link rel="stylesheet" href="product.css">
+	<link rel="stylesheet" href="/public/css/regions_picker_m.css">
+	<title>Document</title>
+</head>
+
+<body class="iconfont ">
+    <!-- 弹出层 -->
+	<div class="page-popUp "></div>
+	<!-- 数量操作 -->
+	<div class="page-popUp_num">
+		<ul>
+			<img class="close" src="img/close_01.png">
+			<img class="avatar" src=""/>
+			<div>
+				<li class="price_1">¥<span></span></li>
+				<li class='nun_1'>已选：<span>1</span>件</li>
+			</div>
+		</ul>
+		<div class="popUp_num_operation">
+			<div>
+			<h5>数量</h5>
+			<ul>
+				<li class="num_btn reduce no_reduce">—</li>
+				<li>1</li>
+				<li class="num_btn add">+</li>
+			</ul>
+			</div>
+		</div>
+		<div class="shoppingBtn">
+			<button class="addType1">加入购物车</button><button class="pay1">立即购买</button>
+			<button class="determine ">确定</button>
+		</div>
+	</div>
+	<!-- 地址选择 -->
+	<div class="page-popUp_address">
+	    <div class="popUp_address_top">
+			<h4>配送地址</h4>
+			<img class="close" src="img/close_01.png">
+		</div>
+
+		<ul class="address_list">
+			<p class="addressList_empty ">暂无收货地址</p>
+		</ul>
+		<!-- <div class="otherAddress">
+			<input type="button" value="选择其他配送地址">
+		</div> -->
+	</div>
+
+	<div class="page-header">
+		<i class="icon-back "></i>
+		<ul>
+			<a class="select">
+				<li>商品</li>
+			</a>
+			<a>
+				<li>详情</li>
+			</a>
+			<a>
+				<li>推荐</li>
+			</a>
+		</ul>
+		<i class="icon-more "></i>
+		<div class="page-href">
+			<a href="/index/index.html"><i class="icon-home"></i><span>首页</span></a>
+			<a href="#"><i class="icon-collection"></i><span>我的收藏</span></a>
+		</div>
+		<div class="box"></div>
+	</div>
+
+	<div class="page-container">
+		<div class="swiper-container">
+			<div class="swiper-wrapper"></div>
+		</div>
+		<div class="page-product">
+			<div class="product_message"> </div>
+		</div>
+		<div class="product-operation">
+			<div class="num_select flexBox">
+				<span class="title">已选</span>
+				<div class="flexBox">
+					<span class="num_2">1件</span>
+					<img class="img-to" src="img/to_01.png" />
+				</div>
+			</div>
+			<div class="address_select flexBox">
+				<span style="height: 11.626666vw;" class="title">送至</span>
+				<div class="flexBox">
+					<div>
+						<p style="margin-bottom:10px"><input class="regions-picker" value="北京北京市海淀区清河街道" readonly /></p>
+						<p>
+							<span>有货</span>
+							<!-- <span>24:00前支付，预计明天(<span></span><span></span>)送达</span> -->
+						</p>
+					</div>
+					<img class="img-to" src="img/to_01.png" />
+				</div>
+			</div>
+			<div class="service flexBox">
+				<ul class="flexBox">
+					<li><i class="icon-adopt"></i><span>满99包邮</span></li>
+					<li><i class="icon-adopt"></i><span>三方店</span></li>
+					<li><i class="icon-adopt"></i><span>7天无理由</span></li>
+					<li><i class="icon-adopt"></i><span>有品配送</span></li>
+					<li><i class="icon-adopt"></i><span>售后免邮</span></li>
+				</ul>
+				<img class="img-to" src="img/to_01.png" />
+			</div>
+		</div>
+		<div class="shopkeeper">
+			<ul class="flexBox">
+				<li class="flexBox">
+					<img class="shopkeeper-img" src="img/shopkeeper_01.jpg" />
+					<div>
+						<p class="shopkeeper-name">小米<span>自营</span></p>
+						<p class="shopkeeper-introduce">让每个人都能享受科技的乐趣</p>
+					</div>
+				</li>
+				<li><a href="#">进入店铺<i>&#xe61a;</i></a></li>
+			</ul>
+			<ul class="flexBox">
+				<li>商品描述 <span>4.8</span> <i>高</i></li>
+				<li>卖家服务 <span>4.9</span> <i>高</i></li>
+				<li>物流服务 <span>4.9</span> <i>高</i></li>
+			</ul>
+		</div>
+		<div class="productDetails">
+			<div class="productDetails_top">
+				<p class="lable_select">商品详情</p>
+				<!-- <p>参数</p> -->
+			</div>
+			<div class="product_introduction">
+				<!-- <img src="img/product_introduction_01.jpg" /> -->
+			</div>
+
+		</div>
+		<div class="page-recommend">
+			<div class="page-recommend_top">
+				<span>你可能还喜欢</span>
+			</div>
+			<ul></ul>
+		</div>
+	</div>
+
+	<div class="page-footer">
+		<div class="page_i">
+			<i class="icon-shop"></i>
+			<p>店铺</p>
+		</div>
+		<div class="page_i">
+		<a href="/cart/cart.html">
+			<i></i>
+			<i class="icon-shoppingCard"></i>
+			<p>购物车</i></p>
+		</a>
+		</div>
+		<div class="shoppingBtn">
+			<button class="addType2">加入购物车</button><button>立即购买</button>
+		</div>
+	</div>
+	<script src="/public/js/jquery-3.4.1.min.js"></script>
+	<script src="/public/js/ajax-extend.js"></script>
+	<script src="/public/js/regions.js"></script>
+	<script src="/public/js/regions_picker_m.js"></script>
+	<!-- <script src="/public/js/swiper-bundle.min.js"></script> -->
+	<script src="/public/js/layer.js"></script>
+	<script src="product.js"></script>
+</body>
+
+</html>

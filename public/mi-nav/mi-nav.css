@@ -1,0 +1,66 @@
+
+ul.mi-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+  
+ }
+ 
+ul.mi-nav li{
+     text-align: center;
+     width: 25%;
+     height: 100%;
+   
+ }
+ ul.mi-nav a{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+ul.mi-nav i{
+    width: 24px;
+    height: 24px;
+    background-image: url('nav_bg.png');
+    background-size: cover;
+ }
+ 
+ ul.mi-nav span{
+    font-size: 10px;
+    color: #666;
+   
+ }
+ 
+ ul.mi-nav li:nth-child(1) i{ background-position:0  0;}
+ ul.mi-nav li:nth-child(2) i{ background-position:0  22.222222% ;}
+ ul.mi-nav li:nth-child(3) i{ background-position:0  66.666666% ;}
+ ul.mi-nav li:nth-child(4) i{ background-position:0  88.888888%;}
+ ul.mi-nav li:nth-child(1).active i{ background-position:0  11.111111% ;}
+ ul.mi-nav li:nth-child(2).active i{ background-position:0  33.333333% ;}
+ ul.mi-nav li:nth-child(3).active i{ background-position:0  77.777777% ;}
+ ul.mi-nav li:nth-child(4).active i{ background-position:0 100% ;}
+
+
+ ul.mi-nav li:nth-child(3) a{
+    position: relative;
+ }
+
+ ul.mi-nav li:nth-child(3) b{ 
+ 
+   display: none;
+   position: absolute;
+   right: 18px;
+   top: 0;
+   text-align: center;
+   line-height: 5vw;
+   height:5vw;
+   width:5vw;
+   font-size: 10px;
+   background-color: red;
+   border-radius: 50%;
+    color: white;
+   }

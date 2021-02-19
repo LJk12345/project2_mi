@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 手机端适口指定 -->
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <!-- 以斜杠开头的是绝对路径 -->
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/layer.css">
+    <link rel="stylesheet" href="/public/fonts/iconfont.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body class="iconfont">
+    <div class="page-header">
+        <i class="icon-back"></i>
+        <div>购物车</div>
+        <span class="b">编辑</span>
+    </div>
+    <div class="page-container">
+        <div class="page-content_header"></div>
+        <div class="page-content">
+            <div class="page-content_top">
+                <i class="icon-back"></i>
+                <h3>购物车</h3>
+                <span class="b">编辑</span>
+            </div>
+            <div class="empty_list">
+                <img src="img/shoppingCard_02.png" />
+                <p>购物车还没有商品哦~</p>
+                <a href="../index/index.html">去逛逛</a>
+            </div>
+            <ul class="page-content_list">
+                <li>
+                    <div class="list_top">
+                        <input class="self-allselect" type="checkbox" />
+                        <span  class="list_title">小米自营</span>
+                        <span class="freight">以免运费</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-footer">
+        <div class="select-all">
+            <input class="all-select" type="checkbox" /><span>全选</span>
+        </div>
+        <div>
+            <p>合计: <span class="price"></span></p>
+            <!-- <p><span>活动优惠¥400.00</span></p> -->
+        </div>
+        <button>结算(<span></span>)</button>
+    </div>
+    <script src="/public/js/jquery-3.4.1.min.js"></script>
+    <script src="/public/js/ajax-extend.js"></script>
+    <script src="/public/js/layer.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

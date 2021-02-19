@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <!-- 手机端适口指定 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+     <!-- 以斜杠开头的是绝对路径 -->
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="category.css">
+    <title>小米</title>
+</head>
+<body>
+    <div class="page-container">
+       <div class="page-header">
+           <div class="search">
+               <img src="img/search.png" />
+               <input type="text" />
+           </div>
+       </div>
+       <div class="page-content">
+            <div class="page-content_left hide-scroll">
+                <ul class="list-main "></ul>
+            </div>
+            <div class="page-content_right hide-scroll">
+                <div>
+                 <img class="avatar"  />
+                </div>
+                <div>
+                    <h4></h4>
+                    <ul class="list-sub"></ul>
+                </div>
+                <p class="empty">暂无商品信息</p>
+            </div>
+       </div>
+      
+       <div class="page-footer">
+       <iframe src="../mi-nav/mi-nav.html" frameborder='0'></iframe>
+       </div>
+    </div>
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="category.js"></script>
+</body>
+</html>

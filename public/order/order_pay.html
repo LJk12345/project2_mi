@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/layer.css">
+    <link rel="stylesheet" href="/public/fonts/iconfont.css">
+    <link rel="stylesheet" href="order_pay.css">
+</head>
+
+    <body class="iconfont">
+        <div class="page-container">
+             <div class="page-header">
+                 <i class="icon-back"></i>
+                 <span >有品收银台</span>
+             </div>
+             <div class="page-content">
+                 <div class="page-content_top">
+                     <p><span>¥</span><b></b><span>.00</span></p>
+                     <p><span>支付剩余时间</span><span class="minute"></span>:<span class="seconds">00</span></p>
+                 </div>
+                 <div class="payment_method">
+                     <div><img src="img/pay_04.png"/><p style="border-bottom:1px solid rgb(247,247,247);"><span>支付宝<b>推荐</b></span><label class="select"></label></p></div>
+                     <div><img src="img/pay_02.png"/><p><span>小米钱包</span><label></label></p></div>
+                 </div>
+                 <div class="payment_method1">
+                    <div><img src="img/pay_03.png"/><p><span>小米分期</span><label></label></p></div>
+                    <div class="by_stages"> 
+                        <p class="count_money">总还款<span class="total_repayment"></span></p>
+                        <ul class="stages_number">
+                            <li class="stages_select" >
+                                <p>¥<span class="repayment"></span>x<span class="number_of_periods">3</span>期</p>
+                                <p>手续费¥<span class="service_charge"></span>/期，费率<span class="interest_rate">2.22%</span></p>
+                            </li>
+                            <li>
+                                <p>¥<span class="repayment"></span>x<span class="number_of_periods">6</span>期</p>
+                                <p>手续费¥<span class="service_charge"></span>/期，费率<span class="interest_rate">3.9%</span></p>
+                            </li>
+                            <li >
+                                <p>¥<span class="repayment"></span>x<span class="number_of_periods">12</span>期</p>
+                                <p>手续费¥<span class="service_charge"></span>/期，费率<span class="interest_rate">7.2%</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>
+             </div>
+             <div class="page-footer">
+                 <button>确认支付¥<span></span></button>
+             </div>
+        </div>
+        <script src="/public/js/jquery-3.4.1.min.js"></script>
+        <script src="/public/js/ajax-extend.js"></script>
+        <script src="/public/js/layer.js"></script>
+        <script src="order_pay.js"></script>
+    </body>
+</html>

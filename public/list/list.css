@@ -1,0 +1,165 @@
+.page-container{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    
+}
+.page-header{
+    padding-top: 10px;
+    width: 100%;
+    flex-shrink: 0;
+}
+.page-header_search{
+   height:11.733333vw;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.page-header_search div{
+     padding: 0 5px;
+     box-sizing: border-box;
+      background-color: rgb(244, 244, 244) ;
+      width:74.666666%;
+      height: 9.6vw;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+}
+.page-header_search div input{
+  background-color: rgba(0, 0,0,0);
+  border: 0;
+  outline: 0;
+  flex-grow: 1;
+}
+
+
+.page-header ul{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.page-header ul li{
+    padding-top: 1px;
+    font-size: 14px;
+    width: 20%;
+    height: 11.2vw;
+    line-height: 11.2vw;
+    text-align: center;
+    position: relative;
+ }
+
+ .page-header ul li:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+ }
+
+ .page-header ul li:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+ }
+
+ .page-header ul span {
+    flex-shrink: 0;
+ }
+
+
+ .page-content {
+    flex-wrap: 1;
+    overflow: hidden;
+    background-color:#F4F4F4 ;
+    overflow: auto;
+ }
+
+
+
+ .page-content ul{
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+
+
+ .column-li{
+    padding-left: 2.666666vw;
+    background-color:white;
+}
+
+.row-li{
+    margin-top:2.666666vw;
+    margin-left: 2.666666vw;
+    padding: 2.666666vw 0;
+    background-color:white;
+    border-radius: 2.666666vw;
+}
+
+
+.column-a{
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+
+.row-a{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.avatar{
+    width: 35.472972%;
+    height: 33.583vw;
+}
+
+
+.row-avatar{
+    width: 45.6vw;
+    height: 45.6vw;
+}
+
+
+.name{
+    font-size: 14px;
+}
+.brief{
+    font-size: 12px;
+    color: rgb(136, 136, 136);
+   
+}
+
+
+.price{
+    font-size: 12px;
+    color: #fa4f0b;
+   
+}
+
+.price span{
+    font-size: 14px;
+   
+}
+
+.product {
+    width:89.473684%;
+    flex-grow: 1;
+}
+
+.row-product{
+    width:40.8vw;
+    white-space:nowrap; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+
+.product p:last-child{
+    color: rgb(136, 136, 136);
+    font-size: 12px;
+}
+
+.select{
+    color:rgb(180, 115, 31); ;
+}
+

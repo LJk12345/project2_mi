@@ -1,0 +1,415 @@
+.page-popUp{ 
+    display: none;
+    position:fixed;
+    top: 0;
+    width: 100%; 
+    height:100%; 
+    padding:10px 0; 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1003;
+   
+}
+
+.page-popUp.show{
+    display: block;
+}
+
+.close{
+    width: 6.4vw;
+    height: 6.4vw;
+    position: absolute;
+    right: 18px;
+
+ }
+
+.page-popUp_address{
+    width: 100%; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+    transition:all 0.6s;
+    z-index: 1003;
+ }
+
+ .page-popUp_address.show{
+    transform:translateY(0);
+ }
+
+ .page-popUp_address .popUp_address_top{
+    height: 13.866666vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .page-popUp_address .address_list{
+        height: 104.533333vw;
+        font-size: 13px;
+        display:flex;
+        overflow: auto
+ }
+
+.fd{
+    flex-direction: column; 
+}
+
+.addressList_empty{
+    display: none;
+    align-self: center; 
+    width: 100%;
+    text-align: center;
+ }
+
+ .address_list li{
+    margin: 12px 0 12px 18px;
+    padding: 0 25px 0 0;
+    display: flex;
+}
+input[type=radio]{
+    width:4.8vw;
+    height: 4.8vw;
+    margin-right: 10px;
+}
+
+.receiveName{
+    display: flex;
+    margin-bottom: 5px;
+}
+.receiveName span{
+  height: 80%;
+  font-size: 10px;
+  border: 1px solid #b4731f;
+  color: #b4731f;
+  padding: 1px 4px;
+  margin:-4px 0 0 6px ; 
+  border-radius: 5px;
+}
+
+.otherAddress{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.otherAddress input{
+    width: 80.8%;
+    height: 10.4vw;
+    background:linear-gradient(90deg, rgb(240,77,46) , rgb(213,17,17) );
+    outline:none;
+    border-radius:20px;
+    color: white;
+    font-size: 15px;
+    font-weight: border;
+    border:0;
+    margin-bottom: 5px;
+}
+
+
+
+.page-header{
+    position: fixed;
+    width: 100%;
+    height:11.733333vw ;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    z-index: 1001;
+}
+.page-header .icon-back{
+    width: 10.4vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.page-header .icon-back::before{
+   font-size: 16px;
+}
+
+.page-header div{
+    font-size: 16px;
+    flex-grow: 1;
+    text-align: center;
+    margin-right:10.4vw ;
+}
+
+
+.page-container{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 14.4vw);
+    background-color: #F4F4F4;
+    overflow: auto;
+}
+
+.page-content_header{
+    position: absolute;
+    width: 100%;
+    height:48vw;
+    background: url("img/shoppingCard_01.png") no-repeat;
+    background-size: cover;
+
+}
+
+/* 主要内容区域 */
+.page-content{
+    position: absolute;
+    width: 94.72vw;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    flex-grow: 1;
+}
+
+.icon-upTo{
+   font-size: 13px;
+   color: rgb(179, 179, 179);
+   margin-left: 5px;
+}
+
+.page-content_top{
+    width: 100%;
+    height:23.466666vw;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.page-content_top .icon-back{
+    width: 11.2vw;
+    height: 11.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.page-content_top h3{
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 11.2vw;
+}
+
+/* 内容容器 */
+.page-content_box{
+    background-color: white;
+    border-radius: 10px;
+    padding:16px 10px ;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* 地址信息 */
+.address{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.address_message{
+    margin-right: 10px;
+}
+
+.address p:nth-child(1) {
+   font-size: 16px;
+   font-weight: bolder;
+   margin-bottom: 8px;
+
+}
+
+.address p:nth-child(1) span{
+    margin-right: 15px;
+}
+
+.address p:nth-child(2) {
+    font-size: 13px;
+}
+
+
+/* 商品信息样式 */
+.page-content_list .list_top{
+    margin-bottom: 16px;
+}
+
+.list_top  .list_title{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 7px;
+    vertical-align: middle;
+ }
+
+ /* 订单列表头部样式 */
+.list_top  img{
+    width: 6.4vw;
+    height: 6.4vw;
+    vertical-align: middle;
+ }
+
+
+/* 商品信息样式 */
+.list_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.list_content a{
+    display: flex;
+    width: 100%;
+    align-items:center;
+}
+
+.list_content img{
+   width: 22.933333vw;
+   height: 22.933333vw;
+   margin-right: 10px;
+   flex-shrink: 0;
+   border-radius: 5px;
+   background-color: #F4F4F4;
+}
+
+.list_content a > div{
+    flex-grow: 1;
+    padding-right:20px;
+    box-sizing: border-box;
+ }
+
+ .list_content .name{
+    font-size: 14px;
+    margin-bottom: 10px;
+ }
+
+ .name span{
+     font-size: 10px;
+     color: #bf1111;
+     border: 1px solid #bf1111;
+     padding: 2px;
+     border-radius: 20px;
+     margin-right: 10px;
+ }
+
+ .list_content .unitPrice_num {
+    display: flex;
+    justify-content: space-between;
+ }
+
+.unitPrice {
+    font-size: 15px;
+    color: #bf1111;
+ }
+.unitPrice i{
+    font-size: 10px;
+ }
+
+ .unitNum {
+     color: black;
+     font-weight: bolder;
+    font-size: 12px;
+ }
+
+ .lable {
+     display: flex;
+     margin: 10px 0;
+     font-size:10px;
+
+ }
+
+ .lable span{
+    color: rgb(191, 17, 17);
+    padding:2px 5px;
+    border-radius: 20px;
+    background-color:rgb(255,244,244) ;
+}
+
+
+
+/* 发票/留言样式 */
+.invoice , .leaving_message{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.invoice p{
+    text-align: right;
+    flex-grow: 1;
+}
+
+.leaving_message input{
+    flex-grow: 1;
+    border: 0;
+    outline: none;
+    margin-left: 10px;
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    align-self: flex-end;
+}
+/* 结算详情 */
+.settlement li{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.money_color{
+    color:#bf1111 ;
+}
+
+
+.page-footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height:14.4vw;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-left:20px ;
+    box-sizing: border-box;
+
+}
+
+.page-footer p{
+ font-size: 14px;
+ font-weight: bolder;
+}
+
+.page-footer .price{
+    color: rgb(191, 17, 17);
+    font-size: 22px ;
+}
+
+
+.page-footer p span:nth-child(2) , .price i {
+    font-size: 13px  !important;
+    margin: 0 5px;
+}
+
+
+.page-footer button{
+    flex-shrink: 0;
+    outline:none;
+    border: 0;
+    color:white;
+    font-weight: bolder;
+    font-size:15px ;
+    border-radius:20px;
+    margin-right: 8px;
+    height: 10.133333vw;
+    width:25.6vw;
+    background:linear-gradient(90deg, rgb(240,77,46) , rgb(213,17,17))
+}

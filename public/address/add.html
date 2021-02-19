@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有品</title>
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/fonts/iconfont.css">
+    <link rel="stylesheet" href="/public/css/regions_picker_m.css">
+    <link rel="stylesheet" href="/public/css/layer.css">
+    <link rel="stylesheet" href="add.css">
+</head>
+<body class="iconfont">
+    <div class="page-container">
+        <div class="page-header">
+            <i class="icon-back"></i>
+            <span>新增地址</span>
+        </div>
+        <div class="page-content">
+            <ul>
+                <li >
+                    <span>收货姓名</span>
+                    <input  class="receiveName" type="text"  placeholder="请输入收货人姓名" maxlength="20"/>
+                </li>
+                <li>
+                    <span>手机号码</span>
+                    <input class="receivePhone" type="text"  placeholder="请输入收货人电话"/>
+                </li>
+                <li >
+                    <span >所在地区</span>
+                    <input class="regions-picker" type="text" placeholder="请选择省/市/区/街道"/>
+                </li>
+                <li >
+                    <span>详细地址</span>
+                    <input class="receiveDetail" type="text" placeholder="请输入街道地址"/>
+                </li>
+            </ul>
+            <div class="delete"><span>删除收货地址</span></div>
+            <button class="save-btn">保存</button>
+        </div>
+    </div>
+
+    <script src="/public/js/jquery-3.4.1.min.js"></script>
+   <script src="/public/js/regions.js"></script>
+   <script src="/public/js/regions_picker_m.js"></script>
+    <script src="/public/js/layer.js"></script>
+    <script src="add.js"></script>
+</body>
+</html>
